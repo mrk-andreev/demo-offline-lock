@@ -1,0 +1,20 @@
+app:
+  lock-prefix: ${APP_LOCK_PREFIX:spring-lock}.
+
+spring:
+  main:
+    banner-mode: off
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    username: ${REDIS_USERNAME:}
+    password: ${REDIS_PASSWORD:}
+    ssl: ${REDIS_SSL:false}
+    client-name: AppOfflineLock
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+server:
+  shutdown: graceful

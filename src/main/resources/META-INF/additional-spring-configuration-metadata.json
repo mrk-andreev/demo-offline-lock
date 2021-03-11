@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "app.lock-prefix",
+      "type": "java.lang.String",
+      "description": "Prefix for redis keys."
+    }
+  ]
+}
